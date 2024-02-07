@@ -21,7 +21,9 @@ export class LoginComponent implements OnInit {
     }
   }
   onSubmit(): void {
+    console.log("oare");
     if (this.loginForm.valid) {
+      console.log('aici');
       this.auth.login(this.loginForm.value).subscribe(
         (result) => {
           console.log(result);

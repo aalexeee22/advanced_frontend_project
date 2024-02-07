@@ -1,13 +1,12 @@
-
-<div class="container" (ngSubmit)="onSubmit()">
-    <form id="loginForm" [formGroup]="loginForm">
+<div class="container">
+    <form id="loginForm" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <h1>Autentificare</h1>
-            <label for="username">Adresă de mail:</label>
-            <input type="text" id="username" required formContolName="email">
+        <label for="username">Adresă de mail:</label>
+        <input type="text" id="username" required formControlName="email">
 
-            <label for="password">Parolă:</label>
-            <input type="password" id="password" required formContolName="password">
+        <label for="password">Parolă:</label>
+        <input type="password" id="password" required formControlName="password">
 
-            <button class="buton-submit" type="submit">Log In</button>
-   </form>
+        <button class="buton-submit" type="submit">Log In</button>
+    </form>
 </div>
