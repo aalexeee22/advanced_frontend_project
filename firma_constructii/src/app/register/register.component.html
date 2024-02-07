@@ -1,11 +1,11 @@
 <div class="container">
-    <form id="createAccountForm">
+    <form id="createAccountForm" #userForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()">
         <h1>Creează-ți cont</h1>
         <label for="newUsername">Adresa de mail:</label>
-        <input type="text" id="newUsername" required>
+        <input type="text" id="newUsername" name="userName"  required [(ngModel)]="userModel.name">
 
         <label for="newPassword">Parolă:</label>
-        <input type="password" id="newPassword" required>
+        <input type="password" id="newPassword" name="password" required [(ngModel)]="userModel.pass">
 
         <button class="buton-submit" type="submit">Crează cont</button>
     </form>

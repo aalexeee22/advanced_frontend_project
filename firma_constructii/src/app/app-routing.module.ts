@@ -4,6 +4,7 @@ import { RrsComponent } from './rrs/rrs.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AdminDashboardComponent } from './admin_module/admin_components/admin-dashboard/admin-dashboard.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/rrs',pathMatch:'full'},//redirectionez ruta pt a afisa prezentarea firmei
@@ -22,4 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[RrsComponent,LoginComponent,RegisterComponent,NotFoundComponent]
+export const routingComponents=[RrsComponent,LoginComponent,RegisterComponent,AdminDashboardComponent,NotFoundComponent]

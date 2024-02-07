@@ -11,6 +11,8 @@ import { AdminDashboardComponent } from './admin_module/admin_components/admin-d
 import { InformatiiComponent } from './admin_module/admin_components/informatii/informatii.component';
 import { AcasaComponent } from './admin_module/admin_components/acasa/acasa.component';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AcasaComponent } from './admin_module/admin_components/acasa/acasa.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
