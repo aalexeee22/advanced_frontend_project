@@ -30,18 +30,6 @@ ul{
     font-size:100%;
     width:100%;
 }
-#lista-meniu-secundar button{
-    background-color: lavender;
-}
-#lista-meniu-secundar{
-    display: none;
-    position: absolute;
-    background-color: lavender;
-}
-nav ul li:hover #lista-meniu-secundar {display: block;}
-p{
-    font-size:large;
-}
 
 @media screen and (max-width: 768px) {
     nav{

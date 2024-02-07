@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'app-acasa',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './acasa.component.scss'
 })
 export class AcasaComponent {
-
+  constructor(private auth:AuthService){}
+  logout():void{
+      this.auth.logout();
+  }
 }

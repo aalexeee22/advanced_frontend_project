@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+}
+.buton-meniu-principal{
+    border:none;
+    background-color:aliceblue;
+    padding:1em;
+    font-size:100%;
+    width:100%;
+}
+#lista-meniu-principal a{
+    text-decoration:none;
+    color:black;
+    border:0 ;
+    
+    width:100%;
+    justify-content: center;
+}
+*{
+    max-width: 50em;
+    margin: auto;
+   
+}  

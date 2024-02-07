@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   private token: string | null = null;
-
+  isLogged: boolean = false;
   constructor(private router: Router) {}
 
   setToken(token: string): void {
@@ -28,9 +28,10 @@ export class AuthService {
   }
 
   login({ email, password }: any): Observable<any> {
+
     if (email === 'admin@gmail.com' && password === 'admin123') {
       this.setToken('abcdefghijklmnopqrstuvwxyz');
-      console.log("am intrat in login in login.component.ts");
+      this.isLogged=true;
       return of({ email: 'admin@gmail.com' });
       
     }

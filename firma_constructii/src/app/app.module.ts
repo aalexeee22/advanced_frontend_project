@@ -13,6 +13,7 @@ import { AcasaComponent } from './admin_module/admin_components/acasa/acasa.comp
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProiecteComponent } from './proiecte/proiecte.component';
 //import { AuthComponent } from './services/auth/auth.component';
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     AdminDashboardComponent,
     InformatiiComponent,
     AcasaComponent,
+    ProiecteComponent,
     
   ],
   imports: [
